@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+			<meta charset="utf-8" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<title>Gain/Loss Calculator</title>
+			<link rel="stylesheet" href="assets/css/styles.css" />
+	</head>
+	<body>
+		<main class="page">
+			<div class="page-head">
+				<h1>Gain/Loss Calculator</h1>
+			</div>
+			<div class="calculator calculator-percent">
+				<form>
+					<div class="form-group">
+						<span class="form-label" data-target="#initial">Initial</span>
+						<input type="text" class="form-control" name="initial" id="initial"
+							data-required="required"
+							data-type="number"
+							placeholder="10"
+							autofocus="autofocus"
+							autocomplete="off"
+						/>
+					</div>
+					<div class="form-group">
+						<span class="form-label" data-target="#final">Final</span>
+						<input type="text" class="form-control" name="final" id="final"
+							data-required="required"
+							data-type="number"
+							placeholder="15"
+							autocomplete="off"
+						/>
+					</div>
+					<div class="form-group">
+						<span class="form-label active" data-target="#percent"><span class="indicator">Solving for this <span class="indicator-arrow"></span></span>%</span>
+						<input type="text" class="form-control active" name="percent" id="percent"
+							data-required="required"
+							data-type="number"
+							disabled="disabled"
+							placeholder="50%"
+							autocomplete="off"
+						/>
+					</div>
+				</form>
+			</div>
+		</main>
+
+		<script src="assets/js/jquery-1.10.2.min.js"></script>
+		<script src="assets/js/parsley.min.js"></script>
+		<script src="assets/js/scripts.js"></script>
+
+		<script>
+			// Initialize Gainloss Calculator
+			gainLossCalculator.init();
+		</script>
+	</body>
+</html>

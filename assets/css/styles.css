@@ -1,0 +1,118 @@
+/*****************************************************************************
+Typography
+*****************************************************************************/
+body {
+	font: 13px/1.3846em Helvetica, Arial, sans-serif;
+	color: #777;
+	font-weight: normal;
+}
+::-webkit-input-placeholder {color: #bbb;}
+::-moz-placeholder {color: #bbb;}
+:-ms-input-placeholder {color: #bbb;}
+
+/*****************************************************************************
+Layout
+*****************************************************************************/
+.page {
+	margin: auto;
+	width: 516px;
+}
+.page-head {
+	margin: 50px 0 100px;
+	border-top: 6px solid #999;
+}
+.form-group {
+	float: left;
+	width: 150px;
+	margin-right: 30px
+}
+.form-group:last-child {
+	margin-right: 0;
+}
+.form-label {
+	position: relative;
+	display: block;
+	height: 80px;
+	width: 80px;
+	margin: 0 auto 20px;
+	border: 6px solid #999;
+	border-radius: 46px;
+	text-align: center;
+	line-height: 80px;
+	font-weight: bold;
+	font-size: 1.5384em;
+	cursor: pointer;
+}
+.form-label:hover {
+	border-color: #888;
+	background-color: #888;
+	color: #fff;
+}
+.form-label.active {
+	border: 6px solid #888;
+	background-color: #888;
+	color: #fff;
+}
+.indicator {
+	position: absolute;
+	top: -60px;
+	left: 0;
+	width: 100px;
+	margin-left: -22px;
+	background-color: #fababa;
+	padding: 10px;
+	border: 1px solid #fababa;
+	border-bottom-color: #fab2b2;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px #ddd;
+	color: #777;
+	font-size: 0.65em;
+	line-height: 1.3846em;
+	font-weight: normal;
+}
+.indicator-arrow {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	margin-left: -8px;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 8px 8px 8px;
+	border-top-color: #fababa;
+}
+.form-control {
+	display: block;
+	width: 120px;
+	margin: 0 auto;
+	padding: 10px;
+	border: 6px solid #bbb;
+	border-top-color: #999;
+	border-radius: 4px;
+	color: inherit;
+	font-weight: bold;
+	font-size: 1.5384em;
+}
+.form-control.active {
+	border-color: #888;
+	background-color: #888;
+	color: gold;
+	font-weight: bold;
+	font-size: 1.5384em;
+}
+#percent.active {
+	color: #83cc00;
+}
+#percent.active.loss {
+	color: #ff3000;
+}
+ul.help-block {
+	list-style: none;
+	padding: 0;
+	margin: 10px 0 0 0;
+	color: #f22400;
+}
+ul.help-block li {
+	margin-bottom: 10px;
+}
